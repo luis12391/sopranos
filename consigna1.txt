@@ -1,0 +1,9 @@
+Utilizando el asyncforloop quiero escribir en un archivo, 
+el siguiente texto:
+
+'Estoy en la iteracion' + nroIteracion
+
+todos los numero que me va ofreciendo la funcion de callback 1
+
+Al final, voy a escribi en el archivo, 'terminaron los numeros'
+
