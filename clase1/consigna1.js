@@ -5,7 +5,7 @@ function start(){
     var numbers= "";
     asyncforloop(100, (nroIteracion, next, abort) => {
         try {
-            numbers+= `Estoy en la interacion ${nroIteracion}\n`;
+            numbers+= `Estoy en la interacion ${nroIteracion + 1}\n`;
             next()            
         } catch (error) {
             abort(new Error('Se ha proiducido un error!!!'))
@@ -14,8 +14,11 @@ function start(){
     }, err => {
         if (err)
             console.log(err)
-        else
+        else{
+            numbers+= `Terminaron los números.`;
             writeAFile(numbers);
+        }
+
 
         console.log('finalizo el asyncforloop')
     })
