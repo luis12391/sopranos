@@ -27,6 +27,8 @@ IMPORTANTE: la conjetura dice que cualquier numero entra en un loop
 infinito de 4,2,1  4,2,1  4,2,1  4,2,1  4,2,1  4,2,1  4,2,1  4,2,1
 */
 
+const NUMBER = 7;
+
 var collatzChains = [];
 
 function isOdd(num) { 
@@ -50,10 +52,10 @@ const getCollatz = (number) => {
     getCollatz(number);
 }
 
-const start = (number) => {
+const start = () => {
     try {
-        console.log(`Getting collatz chain of ${number}`);
-        getCollatz(number);
+        console.log(`Getting collatz chains of ${NUMBER}`);
+        getCollatz(NUMBER);
         console.log(`Collatz chains ${collatzChains.toString()}`);        
     } catch (error) {
         console.log("An error has ocurred"); 
@@ -61,6 +63,6 @@ const start = (number) => {
     }
 
 };
-start(7);
+start();
 
 
