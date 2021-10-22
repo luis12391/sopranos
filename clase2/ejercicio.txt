@@ -1,0 +1,14 @@
+Ejericio dentro de la clase 2
+
+cada vez que se realize un http request sobre /procesar
+se debe sumar 1 a una variable
+
+a los 10 segundos se debe insertar la cantidad de httpRequest
+en una tabla mySQL
+
+de la siguiente forma
+
+insert httpRequests ()
+
+insert into eventos (ts, concepto, valor) values (now(), 'httpRequests', 2)
+
