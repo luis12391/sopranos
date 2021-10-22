@@ -4,7 +4,7 @@ function insertarMySQL(metrica) {
     let objConnection = {
         host     : 'localhost',
         user     : 'root',
-        password : '',
+        password : 'Gonni2021*',
         database : 'lossopranos'
     }
 
@@ -27,4 +27,6 @@ function insertarMySQL(metrica) {
     })
 }
 
-insertarMySQL(100)
+//insertarMySQL(100)
+
+module.exports = insertarMySQL;
