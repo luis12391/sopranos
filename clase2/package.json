@@ -4,12 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": ".\\node_modules\\.bin\\nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@arteysoft/asyncforloop": "^1.0.0"
+    "@arteysoft/asyncforloop": "^1.0.0",
+    "express": "^4.17.1",
+    "mysql2": "^2.3.2",
+    "nodemon": "^2.0.14",
+    "underscore": "^1.13.1"
   }
 }

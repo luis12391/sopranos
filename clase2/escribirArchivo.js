@@ -14,5 +14,9 @@ asyncforloop(10, (nroIteracion, next, abort) => {
     })
 },
 err => {
+    if (err) {
+        console.log(err)
+        return
+    }
     console.log('termino de ejecutar')
 })
